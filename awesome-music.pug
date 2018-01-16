@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Awesome-Music
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+body
+		nav.navbar.navbar-expand-lg.navbar-light.bg-light
+			.container
+				a.navbar-brand(href="#") Awesome Song
+				button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="")
+					span.navbar-toggler-icon
+				#navbarColor03.collapse.navbar-collapse
+					ul.navbar-nav.mr-auto
+						li.nav-item.dropdown
+							a.nav-link.dropdown-toggle(data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") 音樂速報
+							.dropdown-menu(x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 39px, 0px); top: 0px; left: 0px; will-change: transform;")
+								a.dropdown-item(href="#") 華語頻道
+								a.dropdown-item(href="#") 日韓頻道
+								a.dropdown-item(href="#") 西洋頻道
+								a.dropdown-item(href="#") 粵語頻道
+								a.dropdown-item(href="#") 古典爵士頻道
+								a.dropdown-item(href="#") 搖滾頻道
+								a.dropdown-item(href="#") 獨立音樂頻道
+						li.nav-item
+							a.nav-link(href="#") 新鮮發行
+						li.nav-item
+							a.nav-link(href="#") 熱門排行
+						li.nav-item
+							a.nav-link(href="#") 精選歌單
+						li.nav-item.dropdown
+							a.nav-link.dropdown-toggle(data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false") 會員專屬
+							.dropdown-menu(x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 39px, 0px); top: 0px; left: 0px; will-change: transform;")
+								a.dropdown-item(href="#") 熱門活動
+								a.dropdown-item(href="#") 星動態
+						li.nav-item.dropdown
+							a.nav-link.dropdown-toggle(data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false")
+								span.fa.fa-headphones 付費與軟體下載
+							.dropdown-menu(x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 39px, 0px); top: 0px; left: 0px; will-change: transform;")
+								a.dropdown-item(href="#") 軟體下載
+								a.dropdown-item(href="#") 付費儲值
+					form.form-inline.my-2.my-lg-0.ml-auto
+						input.form-control.mr-sm-2(type="text" placeholder="請輸入歌名、歌手或專輯")
+						button.btn.btn-secondary.my-2.my-sm-0(type="submit") Search
+		#carouselExampleIndicators.carousel.slide(data-ride="carousel")
+			ol.carousel-indicators
+				li.active(data-target="#carouselExampleIndicators" data-slide-to="0")
+				li(data-target="#carouselExampleIndicators" data-slide-to="1")
+				li(data-target="#carouselExampleIndicators" data-slide-to="2")
+				li(data-target="#carouselExampleIndicators" data-slide-to="3")
+				li(data-target="#carouselExampleIndicators" data-slide-to="4")
+			.carousel-inner
+				.carousel-item.active
+					img.d-block.w-100(src="image/music01.jpg")
+				.carousel-item
+					img.d-block.w-100(src="image/music02.jpg")
+				.carousel-item
+					img.d-block.w-100(src="image/music03.jpg")
+				.carousel-item
+					img.d-block.w-100(src="image/music04.jpg")
+				.carousel-item
+					img.d-block.w-100(src="image/music05.jpg")
+			a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
+				span.carousel-control-prev-icon(aria-hidden="true")
+				span.sr-only Previous
+			a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
+				span.carousel-control-next-icon(aria-hidden="true")
+				span.sr-only Next
+		.card
+			.card-body
+				span.badge.badge-pill.badge-info NEW
+				h4.card-title 新獨立音樂浪潮
+			.row
+				.co12.col-sm-6.col-lg-3
+					.card.mb-3
+						h3.card-header 甜約翰 Sweet John 
+						.card-body
+							h5.card-title Dear
+							h6.card-subtitle.text-muted 謝謝妳/你，在我們最美麗的年華，讓我們相遇，就讓遺憾與美好藏在旋律裡。
+						img(style="height: 200px; width: 100%; display: block;" src="image/music_in02.jpg" alt="Card image")
+						.card-body
+							p.card-text 投遞了給你的信，身體的一部分也被帶走了。
+							p.card-text 聽著我們曾喜愛的歌，
+							p.card-text 或許我是不想痊癒的。
+						ul.list-group.list-group-flush
+							li.list-group-item 1.　　Dear　　04:23
+							li.list-group-item 2.　　降雨機率　04:02
+							li.list-group-item 3.　　Angelina　　03:50
+				.co12.col-sm-6.col-lg-3
+					.card.mb-3
+						h3.card-header Nightcap睡帽樂團
+						.card-body
+							h5.card-title Room Service
+							h6.card-subtitle.text-muted 閉上雙眼 漂流在夢的長河
+						img(style="height: 200px; width: 100%; display: block;" src="image/music_in01.jpg" alt="Card image")
+						.card-body
+							p.card-text Nightcap 睡帽樂團
+							p.card-text 首張創作專輯【Room Service】
+							p.card-text 陪你喝下 睡前這一杯
+						ul.list-group.list-group-flush
+							li.list-group-item 1.　　Dancing!Dancing!　　02:52
+							li.list-group-item 2.　　私奔 (Elopement)　　04:21
+							li.list-group-item 3.　　一無所有 (Nothing at All)　03:55
+				.col-12.col-sm-6.col-lg-3
+					.card.mb-3
+						h3.card-header 林瑪黛 (MATELIN)
+						.card-body
+							h5.card-title Her café
+							h6.card-subtitle.text-muted 位於金瓜石Her café 發生的神祕事件…
+						img(style="height: 200px; width: 100%; display: block;" src="image/music_in03.jpg" alt="Card image")
+						.card-body
+							p.card-text 咖啡廳空間音樂專輯 × 奇幻童話繪本
+							p.card-text 動物系電子組合 ─ 林瑪黛 操刀製作
+							p.card-text 獻給每一個在城市角落的寂寞動物
+						ul.list-group.list-group-flush
+							li.list-group-item 1.　　妳 (You)　　03:13
+							li.list-group-item 2.　　神秘腳蹤 (Mysterious Path) 03:36
+							li.list-group-item 3.　　氣球裡的宇宙 (Brain Circulation) 03:55
+				.col-12.col-sm-6.col-lg-3
+					.card.mb-3
+						h3.card-header Night Keepers 守夜人
+						.card-body
+							h5.card-title 晚安使用手冊
+							h6.card-subtitle.text-muted 歡迎來到我的夜晚，我會盡力保護你
+						img(style="height: 200px; width: 100%; display: block;" src="image/music_in04.jpg" alt="Card image")
+						.card-body
+							p.card-text 致　每個不想硬要快樂、故作活潑的覺醒者
+							p.card-text 每當你需要一個安靜的放逐之地，
+							p.card-text 守夜人的歌曲便是帶領你跳離焦慮、廢然的溫柔指南。
+						ul.list-group.list-group-flush
+							li.list-group-item 1.往沒發現的訊息前進 (Go Towards Unknown Signals)　02:07
+							li.list-group-item 2.　倒數開始 (Countdown)　　03:10
+							li.list-group-item 3.　小事 (Those Small Things)　　02:51

@@ -1,0 +1,89 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+html,body,h1,h2,h3,h4,h5,h6,ul,li,p {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+.container {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../image/Mbg.png);
+}
+.nav-bar {
+	width: 100%;
+	background: -webkit-linear-gradient(top,#555,#222);
+	height: 40px;
+}
+.mac-logo {
+	position: absolute;
+	top: 0;
+	left: 135px;
+}
+.navigation {
+	position: absolute;
+	top: 18%;
+	left: 140px;
+	background-color: rgb(171,8,8);
+	width: 100px;
+	text-align: center;
+	border-radius: 10px;
+
+}
+.main-navigation ul li {
+	padding: 5px 0;
+	border-bottom: 0.5px solid #666;
+	height: 30px;
+}
+.main-navigation a {
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.position {
+	height: 30px;
+}
+.now-po {
+	position: absolute;
+	line-height: 45px;
+	left: 250px;
+}
+.now-po a {
+	font-size: 14px;
+	color: #ffd600;
+}
+.search {
+	position: absolute;
+	right: 150px;
+	top: 10px;
+} 
+.search-frm form input{
+	border-radius: 10px;
+	background-image: url(../image/search_icon.jpg);
+	background-position: 10px 0;
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	margin-left: 5px;
+	width: 158px;
+	border: 0;
+	font-size: 12px;
+	outline-width: 0;
+}
+
+.navigation-click {
+	background-color: white;
+
+}	
+.navigation-click-a{
+	color: rgb(171,8,8)!important;
+}
