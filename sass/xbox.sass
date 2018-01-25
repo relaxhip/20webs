@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 *
 	box-sizing: border-box
+	font-family: 'Source Sans Pro','Noto Sans TC', sans-serif;
 html,body,h1,h2,h3,h4,h5,h6,ul,li,p
 	margin: 0
 	padding: 0
@@ -7,9 +10,14 @@ html,body,h1,h2,h3,h4,h5,h6,ul,li,p
 	content: ""
 	display: block
 	clear: both
+img
+	width: 100%
+.full-width
+	width: 100%
+.fixed-width
+	width: 1200px
 .container
 	width: 100%
-	// height: 100vh
 	nav
 		position: relative
 
@@ -37,19 +45,20 @@ html,body,h1,h2,h3,h4,h5,h6,ul,li,p
 				color: black
 				cursor: pointer
 .search-bar
-	width: 80%
+	width: 80% 	
 	div
 		position: relative
 		float: right
 		top: 10px
 		input
 			width: 700px
-			margin-right: 10px
+			padding-right: 10px
 			display: none
 		img
-			padding-right: 30px
+			padding-right: 10px
 			height: 20px
 			cursor: pointer
+			width: 20px
 		a 
 			color: black
 #carouselExampleIndicators
@@ -64,7 +73,6 @@ html,body,h1,h2,h3,h4,h5,h6,ul,li,p
 		width: 1024px
 		margin: auto
 .slide-1
-	// left: -30% !important
 	bottom: 30% !important
 	h5 
 		width: 100px!important
@@ -72,10 +80,140 @@ html,body,h1,h2,h3,h4,h5,h6,ul,li,p
 		font-size: 40px
 		margin-bottom: 40px 
 	p 
-		width: 170px!important
+		width: 220px!important
+		font-size: 20px
 		bottom: 0
 		padding-top: 20px
-		// height: 50px!important
+		margin-bottom: 10px!important
 	button
 		position: relative
 		left: -40%!important
+		margin-top: 20px
+
+.slide-2
+	right: -40%!important
+	bottom: 30%!important
+	h5
+		font-size: 40px
+		padding: 10px 0
+	p
+		font-size: 20px
+		padding-bottom: 10px
+.carousel-control-prev-icon,.carousel-control-next-icon 
+	width: 50px!important
+	height: 50px!important
+
+.game-left
+	width: 49%
+	position: relative
+	top: 600px
+	float: left
+	margin: 5px
+	.game1
+		position: relative
+		img
+			height: 650px
+			margin-bottom: 5px
+		.des
+			position: absolute
+			bottom: 8%
+			margin-left: 10%
+			color: white
+			line-height: 50px
+			h2
+				font-size: 40px
+				line-height: 70px
+			p
+				font-size: 26px
+			a
+				text-decoration: none
+				font-size: 14px
+				color: white
+			a:hover
+				text-decoration: underline
+	.game2
+		background-color: green
+		height: 300px
+		position: relative
+		margin-top: 5px
+		img
+			width: 50%
+			height: 300px
+			float: left
+			transition: all,0.5s
+		a:hover
+			img 
+				transform: scale(1.1,1.1)
+		.des
+			position: absolute
+			left: 55%
+			top: 10%
+		h5
+			width: 200px
+			font-size: 24px
+			color: white
+		p
+			width: 200px
+			font-size: 20px
+			color: white
+		a
+			text-decoration: none
+			color: white
+
+.game-right
+	width: 49%
+	position: relative
+	float: right
+	top: 600px
+	margin: 5px
+	.game3
+		background-color: lightblue
+		height: 300px
+		position: relative
+		margin-top: 5px
+		img
+			margin-bottom: 5px
+			width: 50%
+			height: 300px
+			float: right
+			transition: all,0.5s
+		a:hover
+			img 
+				transform: scale(1.1,1.1)
+		.des
+			position: absolute
+			right: 50%
+			top: 10%
+		h2
+			width: 250px
+			font-size: 24px
+			color: black
+		a
+			text-decoration: none
+			color: black
+			line-height: 150px
+			font-size: 16px
+
+	.game4
+		margin: 5px
+		img
+			margin-top: 5px
+			height: 650px
+		
+		.des
+			position: absolute
+			bottom: 6%
+			margin-left: 10%
+			color: white
+			line-height: 50px
+			h2
+				font-size: 44px
+				line-height: 70px
+			p
+				font-size: 26px
+			a
+				text-decoration: none
+				font-size: 14px
+				color: white
+			a:hover
+				text-decoration: underline

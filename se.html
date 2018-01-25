@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Sushi Express</title>
+	<link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/se.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="bootstrap-4.0.0/dist/js/bootstrap.bundle.js"></script>
+	<script src="bootstrap-4.0.0/dist/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<script src="slick/slick.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="#">
+	 		<img src="image/se_logo.png" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse mt-4 " id="navbarSupportedContent">
+	    	<ul class="navbar-nav mr-auto pl-3">
+				<li class="nav-item ml-3">
+				<a class="nav-link" href="#">最新消息</a>
+				</li>
+				<li class="nav-item ml-3">
+				<a class="nav-link" href="#">產品介紹</a>
+				</li>
+				<li class="nav-item ml-3">
+				<a class="nav-link" href="#">人才招募</a>
+				</li>
+				<li class="nav-item ml-3">
+				<a class="nav-link" href="#">壽司公仔</a>
+				</li>
+			</ul>
+	      	<button class="btn btn-danger my-2 my-sm-0" type="submit"><span class="fa fa-map-marker"></span>門市檢索</button>
+		</div>
+	</nav>
+	<div class="head">
+		<div class="bg-title">
+			<img src="image/se-title.png" alt="">
+		</div>
+		<div class="bg">
+			<img src="image/se-bg.png" alt="">
+		</div>
+		<div class="price">
+			<img src="image/se-price.png" alt="">
+		</div>
+	</div>
+	<div class="content">
+		<div class="row">
+			<div class="col-3 offset-md-2 justify-content-between">
+				<div class="content-border">
+					<h1>最新消息</h1>
+					<div class="news news1">
+						<a href="#">
+							<img src="image/sushi01.jpg" alt="">
+							<div class="date">2018.01.31</div>
+							<p>素食者也有福，新品上市</p>
+						</a>
+					</div>
+					<div class="news news2">
+						<a href="#">
+							<img src="image/sushi02.jpg" alt="">
+							<div class="date">2018.01.31</div>
+							<p>慶賀結訓，生魚片祭典</p>
+						</a>
+					</div>
+					<a href="#"	>
+						<div class="new-btn">訊息總覽 <span class="fa fa-arrow-circle-right"></span></div>
+					</a>
+				</div>
+			</div>
+			<div class="col-5 justify-content-between">
+				<div class="content-border">
+					<div class="slick">
+						<img src="image/sushi03.jpg" alt="">
+						<img src="image/sushi04.jpg" alt="">
+						<img src="image/sushi05.jpg" alt="">
+						<img src="image/sushi06.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		<div class="menu-content">
+			<h1>產品介紹</h1>
+			<div class="slider">
+				<a href="#">
+					<img src="image/1.png" alt="">
+				</a>
+				<a href="#">
+					<img src="image/2.png" alt="">
+				</a>
+				<a href="#">
+					<img src="image/3.png" alt="">
+				</a>
+				<a href="#">
+					<img src="image/4.png" alt="">
+				</a>
+				<a href="#">
+					<img src="image/5.png" alt="">
+				</a>
+				<a href="#">
+					<img src="image/6.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$(".slick").slick({
+				arrows: false,
+				autoplay: true,
+				dots: true
+			});
+			$(".slider").slick({
+				slidesToShow: 3,
+			});
+			$(".bg").hide();
+			$(".bg-title").find("img").hide();
+			$(".bg").fadeIn(2000);
+			$(".bg-title").find("img").delay(1500).toggle(1000);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script:400,700');
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+*{
+	font-family: "Dancing Script","Courgette",cursive,"Noto Sans TC" , sans-serif;
+}

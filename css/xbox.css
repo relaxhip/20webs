@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: 'Source Sans Pro','Noto Sans TC', sans-serif;
 }
 
 html, body, h1, h2, h3, h4, h5, h6, ul, li, p {
@@ -12,6 +15,18 @@ html, body, h1, h2, h3, h4, h5, h6, ul, li, p {
   content: "";
   display: block;
   clear: both;
+}
+
+img {
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.fixed-width {
+  width: 1200px;
 }
 
 .container {
@@ -72,14 +87,15 @@ html, body, h1, h2, h3, h4, h5, h6, ul, li, p {
 
 .search-bar div input {
   width: 700px;
-  margin-right: 10px;
+  padding-right: 10px;
   display: none;
 }
 
 .search-bar div img {
-  padding-right: 30px;
+  padding-right: 10px;
   height: 20px;
   cursor: pointer;
+  width: 20px;
 }
 
 .search-bar div a {
@@ -113,12 +129,210 @@ html, body, h1, h2, h3, h4, h5, h6, ul, li, p {
 }
 
 .slide-1 p {
-  width: 170px !important;
+  width: 220px !important;
+  font-size: 20px;
   bottom: 0;
   padding-top: 20px;
+  margin-bottom: 10px !important;
 }
 
 .slide-1 button {
   position: relative;
   left: -40% !important;
+  margin-top: 20px;
+}
+
+.slide-2 {
+  right: -40% !important;
+  bottom: 30% !important;
+}
+
+.slide-2 h5 {
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+.slide-2 p {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.game-left {
+  width: 49%;
+  position: relative;
+  top: 600px;
+  float: left;
+  margin: 5px;
+}
+
+.game-left .game1 {
+  position: relative;
+}
+
+.game-left .game1 img {
+  height: 650px;
+  margin-bottom: 5px;
+}
+
+.game-left .game1 .des {
+  position: absolute;
+  bottom: 8%;
+  margin-left: 10%;
+  color: white;
+  line-height: 50px;
+}
+
+.game-left .game1 .des h2 {
+  font-size: 40px;
+  line-height: 70px;
+}
+
+.game-left .game1 .des p {
+  font-size: 26px;
+}
+
+.game-left .game1 .des a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+
+.game-left .game1 .des a:hover {
+  text-decoration: underline;
+}
+
+.game-left .game2 {
+  background-color: green;
+  height: 300px;
+  position: relative;
+  margin-top: 5px;
+}
+
+.game-left .game2 img {
+  width: 50%;
+  height: 300px;
+  float: left;
+  -webkit-transition: all,0.5s;
+  -o-transition: all,0.5s;
+  transition: all,0.5s;
+}
+
+.game-left .game2 a:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.game-left .game2 .des {
+  position: absolute;
+  left: 55%;
+  top: 10%;
+}
+
+.game-left .game2 h5 {
+  width: 200px;
+  font-size: 24px;
+  color: white;
+}
+
+.game-left .game2 p {
+  width: 200px;
+  font-size: 20px;
+  color: white;
+}
+
+.game-left .game2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.game-right {
+  width: 49%;
+  position: relative;
+  float: right;
+  top: 600px;
+  margin: 5px;
+}
+
+.game-right .game3 {
+  background-color: lightblue;
+  height: 300px;
+  position: relative;
+  margin-top: 5px;
+}
+
+.game-right .game3 img {
+  margin-bottom: 5px;
+  width: 50%;
+  height: 300px;
+  float: right;
+  -webkit-transition: all,0.5s;
+  -o-transition: all,0.5s;
+  transition: all,0.5s;
+}
+
+.game-right .game3 a:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.game-right .game3 .des {
+  position: absolute;
+  right: 50%;
+  top: 10%;
+}
+
+.game-right .game3 h2 {
+  width: 250px;
+  font-size: 24px;
+  color: black;
+}
+
+.game-right .game3 a {
+  text-decoration: none;
+  color: black;
+  line-height: 150px;
+  font-size: 16px;
+}
+
+.game-right .game4 {
+  margin: 5px;
+}
+
+.game-right .game4 img {
+  margin-top: 5px;
+  height: 650px;
+}
+
+.game-right .game4 .des {
+  position: absolute;
+  bottom: 6%;
+  margin-left: 10%;
+  color: white;
+  line-height: 50px;
+}
+
+.game-right .game4 .des h2 {
+  font-size: 44px;
+  line-height: 70px;
+}
+
+.game-right .game4 .des p {
+  font-size: 26px;
+}
+
+.game-right .game4 .des a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+
+.game-right .game4 .des a:hover {
+  text-decoration: underline;
 }
